@@ -5,6 +5,17 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* section common styles */
+
+section {
+    margin-top: 120px;
+}
+
 /* nav bar styles */
 nav {
     background-color: #FFF;
@@ -79,17 +90,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 68px; */
+    gap: 10px;
 }
 
 /* .header_banner img {
     background-color: #0B0223;
 } */
 
+.header_banner img {
+    object-fit: scale-down;
+    /* width: 50%; */
+    /* width: 901px; */
+}
+
 .banner_text {
     background-image: url(../images/Group\ 14.png);
     padding: 148px 240px;
-    margin-right: 68px;
+    /* margin-right: 68px; */
     width: 901px;
     height: 700px;
     background-repeat: no-repeat;
@@ -154,4 +171,51 @@ nav {
     font-weight: 600;
     line-height: normal;
     margin-top: 35px;
+}
+
+/* online games section style */
+
+.section_title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.section_title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section_description {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.onlinegames_image {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    margin-left: 35px;
+}
+
+.onlinegames_image img {
+    width: 242px;
+    height: 300px
+}
+
+.onlinegames_image p {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
 }
