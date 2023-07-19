@@ -284,9 +284,36 @@ nav {
     padding: 10px 10px;
 }
 
-.user_icons {
+.user_icons1 {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 34px;
     grid-row-gap: 34px;
+    border: 1px solid transparent;
+    color: #0B0223;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.icon_div:hover {
+    outline: 1px solid rgb(250, 0, 133);
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.user_icons2 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 34px;
+    grid-row-gap: 34px;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    color: #0B0223;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 35px;
 }
